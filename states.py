@@ -66,7 +66,6 @@ class Simulated_Universe(Universe_Utils):
     def normal(self):
         self.check('auto_1',0.0891,0.9676)
         if self.tm<0.95 and self.check('auto_2',0.3760,0.0370) and self.battle==0:
-            self.click((0.0891,0.9676))
             self.battle=1
             return 1
         if self.check('choose_bless',0.9266,0.9491):
